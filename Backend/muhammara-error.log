@@ -14,3 +14,5 @@
 [ 23/11/2024 14:48:09 ] UnicodeString::FromUTF16BE, fault string - high surrogat encountered without a low surrogate
 [ 23/11/2024 15:14:40 ] UnicodeString::FromUTF16BE, fault string - high surrogat encountered without a low surrogate
 [ 23/11/2024 15:14:40 ] UnicodeString::FromUTF16BE, fault string - high surrogat encountered without a low surrogate
+[ 23/11/2024 15:31:20 ] UnicodeString::FromUTF16BE, fault string - high surrogat encountered without a low surrogate
+[ 23/11/2024 15:31:20 ] UnicodeString::FromUTF16BE, fault string - high surrogat encountered without a low surrogate
