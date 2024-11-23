@@ -130,3 +130,116 @@ We welcome contributions to improve the project. To contribute:
    git push origin feature/your-feature
    ```
 6. **Create a Pull Request**.
+
+## Kubernetes Deployment
+
+# React App and Node.js Backend Deployment on Kubernetes
+
+This project contains a React frontend and a Node.js backend for converting Word documents to PDF. The app is designed to be deployed on Kubernetes.
+
+## Prerequisites
+
+Before deploying the application, ensure you have the following:
+
+- **Kubernetes Cluster**: Set up and running (e.g., Minikube for local development, GKE, EKS, or AKS for cloud).
+- **kubectl**: Kubernetes command-line tool installed and configured to connect to your cluster.
+- **Docker**: For building and pushing container images.
+- **Docker Registry Account**: For pushing images (e.g., Docker Hub, AWS ECR, GCR).
+- **Ingress Controller**: Optional, if you plan to expose your app via domain.
+
+## Setup Instructions
+
+### Step 1: Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+
+**Step 2: Build Docker Images**
+
+Frontend Docker Image: Build the Docker image for the React frontend.
+
+```bash
+docker build -t your-docker-username/frontend-app:latest ./frontend
+```
+
+# React App and Node.js Backend Deployment on Kubernetes
+
+This project contains a React frontend and a Node.js backend for converting Word documents to PDF. The app is designed to be deployed on Kubernetes.
+
+## Prerequisites
+
+Before deploying the application, ensure you have the following:
+
+- **Kubernetes Cluster**: Set up and running (e.g., Minikube for local development, GKE, EKS, or AKS for cloud).
+- **kubectl**: Kubernetes command-line tool installed and configured to connect to your cluster.
+- **Docker**: For building and pushing container images.
+- **Docker Registry Account**: For pushing images (e.g., Docker Hub, AWS ECR, GCR).
+- **Ingress Controller**: Optional, if you plan to expose your app via domain.
+
+## Setup Instructions
+
+### Step 1: Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+
+**Step 2: Build Docker Images**
+
+**Frontend Docker Image**: Build the Docker image for the React frontend.
+
+```bash
+docker build -t your-docker-username/frontend-app:latest ./frontend
+```
+
+**Backend Docker Image**: Build the Docker image for the Node.js backend.
+
+```bash
+docker build -t your-docker-username/backend-app:latest ./backend
+```
+
+**Step 3: Push Docker Images to a Container Registry**
+
+Push the frontend and backend Docker images to your container registry.
+
+Push Frontend Image:
+
+```bash
+docker push your-docker-username/frontend-app:latest
+```
+
+**Push Backend Image:**
+
+```bash
+docker push your-docker-username/backend-app:latest
+```
+
+**Running Docker Containers**
+
+Frontend:
+
+```bash
+docker run -p 3001:3001 your-docker-username/frontend-app
+```
+
+Backend:
+
+```bash
+docker run -p 3000:3000 your-docker-username/backend-app
+```
+
+### Key Sections:
+
+1. **Prerequisites**: Ensures the user has everything needed to get started.
+2. **Setup Instructions**: Guides the user on how to clone, open, and set up the project in Visual Studio Code.
+3. **Running the Application**: Details the commands to run both the frontend and backend locally.
+4. **Debugging and Extensions**: Provides tips for better development experience in VS Code.
+5. **Docker**: Optional instructions for building and running the app with Docker.
+6. **Common Issues**: Helps troubleshoot common errors encountered during setup.
